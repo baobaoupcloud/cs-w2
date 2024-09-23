@@ -7,7 +7,7 @@ pre : " <b> 6. </b> "
 ---
 **Mật mã học** là nghệ thuật mã hóa và giải mã thông điệp. Nó được áp dụng để đảm bảo chỉ có người nhận nhất định mới có thể đọc và xử lý thông tin đó.
 
-![cipher](https://raw.githubusercontent.com/baobaoupcloud/cs/main/static/images/6.cryptography/cryptography2.png)
+![cipher](https://raw.githubusercontent.com/baobaoupcloud/cs-w2/main/static/images/6.cryptography/cryptography2.png)
 
 Như trong hình minh họa, `văn bản gốc` và một `khóa` được cung cấp cho `bộ mã hóa`, trả ra `văn bản đã được mã hóa`.
 
