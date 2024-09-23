@@ -10,7 +10,7 @@ pre : " <b> 3. </b> "
 
 Có thể hình dung chuỗi là một mảng bắt đầu bằng một ký tự và kết thúc bằng ký tự kết thúc đặc biệt `NUL character` `\0`
 
-![string](https://raw.githubusercontent.com/baobaoupcloud/cs-w1/main/static/images/3.strings/strings1.png)
+![string](https://raw.githubusercontent.com/baobaoupcloud/cs/main/static/images/3.strings/strings1.png)
 
 Ví dụ về chuỗi trong đoạn mã sau:
 
