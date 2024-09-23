@@ -9,7 +9,8 @@ pre : " <b> 3. </b> "
 A `string` is simply an array of variables of type `char`: an array of characters.
 
 For example in this image, we can see how a string is an array of characters that begins with the first character and ends with a special character called a `NUL character` `\0`:
-![string](https://raw.githubusercontent.com/baobaoupcloud/cs-w1/main/static/images/3.strings/strings1.png)
+
+![string](https://raw.githubusercontent.com/baobaoupcloud/cs/main/static/images/3.strings/strings1.png)
 
 An example of string defined in code:
 
