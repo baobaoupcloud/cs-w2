@@ -1,59 +1,52 @@
 [
 {
 	"uri": "//localhost:1313/vi/",
-	"title": "CS50 Week 1",
+	"title": "CS50 Tuần 2",
 	"tags": [],
 	"description": "",
-	"content": "CS50 Week 1 - C Overall This workshop is a learning note of CS50 course. In the first week, we will discover these following contents.\nContent Introduction How-to-program-in-C Variables Conditionals Loops Operators-and-functions Practice "
+	"content": "CS50 Tuần 2 - Mảng Tổng quan Chào mừng đến với tuần thứ hai của CS50. Trong tuần này, chúng ta sẽ khám phá khái niệm \u0026ldquo;mảng\u0026rdquo;. Hiểu khái niệm mảng sẽ giúp chúng ta giải quyết các bài toán phức tạp một cách hiệu quả hơn. Chúng ta sẽ đi qua những nội dung sau đây.\nMục lục Giới-thiệu Bộ-nhớ Chuỗi Đối-số-dòng-lệnh Trạng-thái-kết-thúc Mật-mã-học "
 },
 {
-	"uri": "//localhost:1313/vi/1-introduction/",
-	"title": "Giới thiệu",
+	"uri": "//localhost:1313/vi/1-arrays/",
+	"title": "Mảng",
 	"tags": [],
 	"description": "",
-	"content": "CS50 là một khóa học cơ bản về Khoa học Máy tính, do David J. Malan giảng dạy tại Đại học Harvard. Khóa học bao gồm các chủ đề như trừu tượng hóa, thuật toán, cấu trúc dữ liệu, đóng gói, quản lý tài nguyên, bảo mật, kỹ thuật phần mềm và phát triển web. Khóa học cng cung cấp kiến thức về các ngôn ngữ lập trình như C, Python, SQL, JavaScript, CSS và HTML.\nTrong tuần đầu tiên, chúng ta sẽ học cách lập trình bằng C.\n"
+	"content": "Mảng là một danh sách các giá trị được lưu trữ liên tiếp trong bộ nhớ máy tính.\nĐể tạo một mảng trong ngôn ngữ C, đầu tiên xác định kiểu dữ liệu cho mảng và tạo một tên cho mảng đó. Sau đó thêm vào [] số lượng phần tử mà mảng có thể chứa. Cuối cùng thêm các phần tử vào mảng theo số chỉ mục. Chỉ số mảng bắt đầu từ 0: [0] sẽ là phần tử đầu tiên, [1] là phần tử thứ hai,\u0026hellip;\nVí dụ tạo mảng scores:\nint scores[3]; scores[0] = get_int(\u0026#34;Điểm: \u0026#34;); scores[1] = get_int(\u0026#34;Điểm: \u0026#34;); scores[2] = get_int(\u0026#34;Điểm: \u0026#34;) int scores[3] thông báo trình biên dịch cung cấp ba vị trí liền kề trong bộ nhớ có kích thước int là số nguyên để lưu trữ ba phần tử scores.\nSau đó chúng ta dùng get_int để lấy Điểm gán cho các phần tử scores.\nChúng ta còn có thể cải thiện mã thành:\nint scores[3]; for (int i = 0; i \u0026lt; 3; i++) { scores[i] = get_int(\u0026#34;Điểm: \u0026#34;); } Số chỉ mục i sẽ lặp 0 → 2 để lấy ba phần tử của mảng scores\n"
 },
 {
-	"uri": "//localhost:1313/vi/2-how-to-program-in-c/",
-	"title": "Lập trình bằng ngôn ngữ C",
+	"uri": "//localhost:1313/vi/2-memory/",
+	"title": "Bộ nhớ",
 	"tags": [],
 	"description": "",
-	"content": "In this course, we use Visual Studio Code (VS Code) as the integrated development environment (IDE). VS Code has all the software required for the course already pre-loaded on it.\nWe use three commands to write, compile, and run our program: code, make, ./\nFor example: build the program hello\nGo into the terminal window, type code hello.c to creates a file in C named hello and allows us to type instructions for this program.\nIn the text editor that appears, write code as follows:\n#include \u0026lt;stdio.h\u0026gt; int main(void) { printf(\u0026#34;hello, mate\\n\u0026#34;); } printf is a function that can output a line of text. Notice the placement of the quotes () and the semicolon ;. Further, the \\n creates a new line after the words \u0026ldquo;hello, mate\u0026rdquo;. Other functions will be mentioned later in the course.\nIn the terminal window, type make hello or clang hello.c -o hello to compile the file from our instruction and creates an executable file called hello Continue type ./hello to run the program hello The program will execute saying \u0026ldquo;hello, mate\u0026rdquo; In C, we have libraries of functions. There is a Manual provides all the capabilities of them. They are collections of pre-written functions that others have written in the past that we can utilise in our code.\nAt the start of the code, remember to include the header file to use the functions. Such as #include \u0026lt;stdio.h\u0026gt; to use printf function. Also notice that the statement of code is closed with a ; . Omission of ; will cause error.\n"
+	"content": "Bên trong máy tính, chúng ta có một lượng bộ nhớ hữu hạn. Mỗi kiểu dữ liệu yêu cầu một lượng tài nguyên hệ thống nhất định:\nbool 1 byte int 4 bytes long 8 bytes float 4 bytes double 8 bytes char 1 byte Ta có thể tưởng tượng một char (kiểu dữ liệu ký tự) sẽ cần 1 byte trong bộ nhớ, giống như trong ảnh:\nTương tự, một int (kiểu dữ liệu số nguyên) sẽ cần 4 byte:\n"
 },
 {
-	"uri": "//localhost:1313/vi/3-variables/",
-	"title": "Biến",
+	"uri": "//localhost:1313/vi/3-strings/",
+	"title": "Chuỗi",
 	"tags": [],
 	"description": "",
-	"content": "Variables In C, variables must have a defined data type, and formats code are needed to print them.\nTypes:\nbool, a Boolean expression of either true or false char, a single character like a or 2 float, a floating-point value, or real number with a decimal value double, a floating-point value with more digits than a float int, integers up to a certain size, or number of bits long, integers with more bits, so they can count higher than an int string, a string of characters Format code:\n%c, char %f, float %i, int %li, long int %s, strings For example: program to get the user’s name\n#include \u0026lt;cs50.h\u0026gt; #include \u0026lt;stdio.h\u0026gt; int main(void) { string answer = get_string(\u0026#34;What\u0026#39;s your name? \u0026#34;); printf(\u0026#34;hello, %s\\n\u0026#34;, answer); } The get_string function is used to get a string from the user. Then, the variable answer is passed to the printf function. %s is a format code tells the printf function to prepare itself to receive a string. answer is called a variable. It is of type string and can hold any sting within it. "
+	"content": "Chuỗi Chuỗi có thể hiểu đơn giản là một mảng các ký tự.\nCó thể hình dung chuỗi là một mảng bắt đầu bằng một ký tự và kết thúc bằng ký tự kết thúc đặc biệt NUL character \\0\nVí dụ về chuỗi trong đoạn mã sau:\n#include \u0026lt;cs50.h\u0026gt; #include \u0026lt;stdio.h\u0026gt; int main(void) { string s = \u0026#34;HI!\u0026#34;; printf(\u0026#34;%c%c%c\\n\u0026#34;, s[0], s[1], s[2]); } Chuỗi s là một mảng gồm 3 ký tự: H I !\nChúng ta có thể thao tác với chuỗi như đo độ dài chuỗi, chuyển đổi giữa chữ viết hoa và viết thường bằng cách dùng các mã được viết sẵn trong các thư viện tiêu đề.\nĐo độ dài chuỗi Chúng ta sẽ dùng hàm strlen() trong thư viện tiêu đề string.h để đo độ dài chuỗi. Ví dụ:\n#include \u0026lt;cs50.h\u0026gt; #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;string.h\u0026gt; int main(void) { // Yêu cầu người dùng nhập tên string name = get_string(\u0026#34;Tên: \u0026#34;); int length = strlen(name); printf(\u0026#34;%i\\n\u0026#34;, length); } Hàm strlen() sẽ tính toán độ dài của chuỗi được truyền vào.\nChữ hoa và chữ thường Dùng hàm toupper() function in the ctype.h library to convert string into upper case. For example:\n#include \u0026lt;cs50.h\u0026gt; #include \u0026lt;ctype.h\u0026gt; #include \u0026lt;stdio.h\u0026gt; #include \u0026lt;string.h\u0026gt; int main(void) { string s = get_string(\u0026#34;Viết thường: \u0026#34;); printf(\u0026#34;Viết hoa: \u0026#34;); for (int i = 0, n = strlen(s); i \u0026lt; n; i++) { printf(\u0026#34;%c\u0026#34;, toupper(s[i])); } printf(\u0026#34;\\n\u0026#34;); } Hàm này sẽ lấy chuỗi và chuyển đổi các ký tự trong đó thành chữ hoa. Tương tự, chúng ta có thể sử dụng hàm tolower() để chuyển đổi chuỗi thành chữ thường.\n"
 },
 {
-	"uri": "//localhost:1313/vi/4-conditionals/",
-	"title": "Điều kiện",
+	"uri": "//localhost:1313/vi/4-command-line-arguments/",
+	"title": "Đối số dòng lệnh",
 	"tags": [],
 	"description": "",
-	"content": "Conditionals are constructs that perform different actions depending on the conditions.\nFor example we can give conditions for the program to do comparison:\nIn the terminal window, type code compare.c and write code as follow: #include\u0026lt;cs50.h\u0026gt; #include\u0026lt;stdio.h\u0026gt; int main(void) { int x = get_int(\u0026#34;What\u0026#39;s x? \u0026#34;); int y = get_int(\u0026#34;What\u0026#39;s y? \u0026#34;); if (x \u0026lt; y) { printf(\u0026#34;x is less than y\\n\u0026#34;); } elseif (x \u0026gt; y) { printf(\u0026#34;x is greater than y\\n\u0026#34;); } else{ printf(\u0026#34;x is equal to y\\n\u0026#34;); } } We created 2 variables type integer x, y. The values of these are populated using the get_int function.\nRun the code by executing make compare in the terminal window, followed by ./compare. Input the 2 numbers and get the results. The process of the program can be shown as flow charts. Such charts can be used to examine the efficiency of our code.\nFollowing is the flow chart of the above code. "
+	"content": "Đối số dòng lệnh là các giá trị được nhập vào sau tên của chương trình trong cửa sổ shell của hệ điều hành. Chúng có thể được sử dụng làm đầu vào để điều khiển chương trình một cách dễ dàng và linh hoạt hơn.\nCú pháp:\nint main(argc, string argv[]) {} argc (arguments count) đếm số lượng đối số được nhập vào trong câu lệnh. Giá trị của argc phải là số dương.\nargv (arguments vector) là mảng chứa các đầu vào từ dòng lệnh.\nVí dụ:\nTạo tệp argument.c và viết code như sau:\n#include \u0026lt;cs50.h\u0026gt; #include \u0026lt;stdio.h\u0026gt; int main(int argc, char* argv[]) { printf(\u0026#34;Bạn đã nhập %d đối số:\\n\u0026#34;, argc); for (int i = 0; i \u0026lt; argc; i++) { printf(\u0026#34;%s\\n\u0026#34;, argv[i]); } } Nhập make argument trong cửa sổ terminal để biên dịch tệp\nThử chạy chương trình bằng cách thêm đối số sau tên chương trình:\n./argument chào bạn\nThe output will be\nBạn đã nhập 3 đối số: ./argument chào bạn "
 },
 {
-	"uri": "//localhost:1313/vi/5-loops/",
-	"title": "Vòng lặp",
+	"uri": "//localhost:1313/vi/5-exit-status/",
+	"title": "Trạng thái kết thúc",
 	"tags": [],
 	"description": "",
-	"content": "A loop is a sequence of instructions that is continually repeated until a certain condition is reached.\nFor example we can loop the action saying meow 3 times in 2 ways: while loop and for loop.\nInitially, the code looks like this: #include \u0026lt;stdio.h\u0026gt; int main(void) { printf(\u0026#34;meow\\n\u0026#34;); printf(\u0026#34;meow\\n\u0026#34;); printf(\u0026#34;meow\\n\u0026#34;); } We can improve the code by using while loop: #include \u0026lt;stdio.h\u0026gt; int main(void) { int i = 0; while (i \u0026lt; 3) { printf(\u0026#34;meow\\n\u0026#34;); i++; } } The code means i variable type integer is assigned the value 3. We create a while loop that will run as long as i \u0026lt; 3. Then, the loop runs. Every time 1 is added to i using the i++ statement. 3. Or we can use the for loop:\n#include\u0026lt;stdio.h\u0026gt; int main(void) { for (int i = 0; i \u0026lt; 3; i++) { printf(\u0026#34;meow\\n\u0026#34;); } } The first argument int i = 0 starts our counter at 0. The second argument i \u0026lt; 3 is the condition that is being checked. Finally, the argument i++ tells the loop to add 1 each time the loop runs.\n"
+	"content": "Khi một chương trình kết thúc, một mã thoát đặc biệt được cung cấp cho máy tính.\nKhi một chương trình kết thúc mà không có lỗi, mã trạng thái 0 được cung cấp cho máy tính. Thông thường, khi xảy ra lỗi dẫn đến kết thúc chương trình, mã trạng thái 1 được cung cấp cho máy tính.\nVí dụ: viết một chương trình C có tên status.c như sau:\n#include \u0026lt;cs50.h\u0026gt; #include \u0026lt;stdio.h\u0026gt; int main(int argc, string argv[]) { if (argc != 2) { printf(\u0026#34;Thêm một đối số dòng lệnh\\n\u0026#34;); return 1; } printf(\u0026#34;chào %s\\n\u0026#34;, argv[1]); return 0; } Sau đó, chạy chương trình bằng cách nhập ./status bạn, chúng ta sẽ nhận được mã trạng thái 0 với kết quả trả ra là chào bạn. Nếu bạn không cung cấp bất kỳ đối số nào, chẳng hạn như chỉ nhập ./status, chúng ta sẽ nhận được mã trạng thái 1 với cảnh báo Thêm một đối số dòng lệnh.\n"
 },
 {
-	"uri": "//localhost:1313/vi/6-operators-and-functions/",
-	"title": "Toán tử và hàm",
+	"uri": "//localhost:1313/vi/6-cryptography/",
+	"title": "Mật mã học",
 	"tags": [],
 	"description": "",
-	"content": "Operators are the mathematical operations that are supported by the compiler. In C, these mathematical operators include:\n+ for addition - for subtraction * for multiplication / for division % for remainder For example: assign the sum of a and b to c: int c = a + b;\nWe can create our own functions in C. For example create a C function called meow\nvoid meow(void) { printf(\u0026#34;meow\\n\u0026#34;); } With meow is the name of the function we want to create. The first void means this function has no return value. And the void in parentheses means it takes no inputs. It only meows\n"
-},
-{
-	"uri": "//localhost:1313/vi/7-practice/",
-	"title": "Thực hành",
-	"tags": [],
-	"description": "",
-	"content": "Everything discussed above can be applied to create code representing the blocks in Mario. For example:\nBuild the horizontal blocks of 4 ? In the terminal window, type code mario.c and code as follows:\n#include \u0026lt;stdio.h\u0026gt; int main(void) { for (int i = 0; i \u0026lt; 4; i++) { printf(\u0026#34;?\u0026#34;); } printf(\u0026#34;\\n\u0026#34;); } Similarly, we can create vertical blocks of 3 Modify the code as follows:\n#include \u0026lt;stdio.h\u0026gt; int main(void) { for (int i = 0; i \u0026lt; 3; i++) { printf(\u0026#34;#\\n\u0026#34;); } } Show the results by executing make mario in the terminal window, followed by ./mario.\nAnd that\u0026rsquo;s all for week 1 ^^\n"
+	"content": "Mật mã học là nghệ thuật mã hóa và giải mã thông điệp. Nó được áp dụng để đảm bảo chỉ có người nhận nhất định mới có thể đọc và xử lý thông tin đó.\nNhư trong hình minh họa, văn bản gốc và một khóa được cung cấp cho bộ mã hóa, trả ra văn bản đã được mã hóa.\nKhoá là một thông số đặc biệt được truyền đến bộ mã hóa cùng với văn bản gốc. Bộ mã hóa sử dụng khóa để quyết định cách triển khai thuật toán mã hóa của nó.\nMã hóa đóng vai trò quan trọng trong việc bảo vệ dữ liệu và người dùng, đảm bảo tính bảo mật và ngăn chặn tội phạm mạng đánh cắp thông tin nhạy cảm của công ty.\nVậy là xong tuần 2 ^^\n"
 },
 {
 	"uri": "//localhost:1313/vi/categories/",

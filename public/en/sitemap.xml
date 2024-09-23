@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/1-arrays/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-arrays/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-arrays/"
+                />
+  </url><url>
     <loc>//localhost:1313/</loc>
     <xhtml:link
                 rel="alternate"
@@ -14,88 +26,64 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/1-introduction/</loc>
+    <loc>//localhost:1313/2-memory/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-introduction/"
+                href="//localhost:1313/vi/2-memory/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-introduction/"
+                href="//localhost:1313/2-memory/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-how-to-program-in-c/</loc>
+    <loc>//localhost:1313/3-strings/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-how-to-program-in-c/"
+                href="//localhost:1313/vi/3-strings/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-how-to-program-in-c/"
+                href="//localhost:1313/3-strings/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-variables/</loc>
+    <loc>//localhost:1313/4-command-line-arguments/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-variables/"
+                href="//localhost:1313/vi/4-command-line-arguments/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-variables/"
+                href="//localhost:1313/4-command-line-arguments/"
                 />
   </url><url>
-    <loc>//localhost:1313/4-conditionals/</loc>
+    <loc>//localhost:1313/5-exit-status/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/4-conditionals/"
+                href="//localhost:1313/vi/5-exit-status/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/4-conditionals/"
+                href="//localhost:1313/5-exit-status/"
                 />
   </url><url>
-    <loc>//localhost:1313/5-loops/</loc>
+    <loc>//localhost:1313/6-cryptography/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/5-loops/"
+                href="//localhost:1313/vi/6-cryptography/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/5-loops/"
-                />
-  </url><url>
-    <loc>//localhost:1313/6-operators-and-functions/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/6-operators-and-functions/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/6-operators-and-functions/"
-                />
-  </url><url>
-    <loc>//localhost:1313/7-practice/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/7-practice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/7-practice/"
+                href="//localhost:1313/6-cryptography/"
                 />
   </url><url>
     <loc>//localhost:1313/categories/</loc>

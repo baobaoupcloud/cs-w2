@@ -1,19 +1,18 @@
 ---
-title : "CS50 Tuần 1"
+title : "CS50 Tuần 2"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
-# CS50 Week 1 - C
+# CS50 Tuần 2 - Mảng
 
 ### Tổng quan
-Workshop này là ghi chú nhỏ cho khoá học CS50. Ở tuần đầu tiên, chúng ta đi qua các nội dung sau.
+Chào mừng đến với tuần thứ hai của CS50. Trong tuần này, chúng ta sẽ khám phá khái niệm "mảng". Hiểu khái niệm mảng sẽ giúp chúng ta giải quyết các bài toán phức tạp một cách hiệu quả hơn. Chúng ta sẽ đi qua những nội dung sau đây.
 
 ### Mục lục
  1. [Giới-thiệu](1-Introduction/)
- 2. [Lập-trình-bằng-ngôn-ngữ-C](2-How-to-program-in-C/)
- 3. [Biến](3-Variables/)
- 4. [Điều-kiện](4-Conditionals/)
- 5. [Vòng-lặp](5-Loops/)
- 6. [Toán-tử-và-hàm](Operators-and-functions/)
- 7. [Thực-hành](7-Practice/)
+ 2. [Bộ-nhớ](2-Memory/)
+ 3. [Chuỗi](3-Strings/)
+ 4. [Đối-số-dòng-lệnh](4-Command-Lines-arguments/)
+ 5. [Trạng-thái-kết-thúc](5-Exit-status/)
+ 6. [Mật-mã-học](6-Cryptography/)
