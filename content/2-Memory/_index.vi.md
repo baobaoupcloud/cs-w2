@@ -15,8 +15,8 @@ Bên trong máy tính, chúng ta có một lượng **bộ nhớ** hữu hạn. 
 
 Ta có thể tưởng tượng một `char` (kiểu dữ liệu ký tự) sẽ cần 1 byte trong bộ nhớ, giống như trong ảnh:
 
-![a byte](https://raw.githubusercontent.com/baobaoupcloud/cs/main/static/images/2.memory/memory1.png)
+![a byte](https://raw.githubusercontent.com/baobaoupcloud/cs-w2/main/static/images/2.memory/memory1.png)
 
 Tương tự, một `int` (kiểu dữ liệu số nguyên) sẽ cần 4 byte:
 
-![4 bytes](https://raw.githubusercontent.com/baobaoupcloud/cs/main/static/images/2.memory/memory2.png)
+![4 bytes](https://raw.githubusercontent.com/baobaoupcloud/cs-w2/main/static/images/2.memory/memory2.png)
