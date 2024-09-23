@@ -18,8 +18,8 @@ Each data type requires a certain amount of system resources:
 
 Physically, we might imagine that a `char`, which requires 1 byte of memory, may look as follows:
 
-![a byte](https://raw.githubusercontent.com/baobaoupcloud/cs-w1/main/static/images/2.memory/memory1.png)
+![a byte](https://raw.githubusercontent.com/baobaoupcloud/cs/main/static/images/2.memory/memory1.png)
 
 Similarly, an int, which requires 4 bytes might look as follows:
 
-![4 bytes](https://raw.githubusercontent.com/baobaoupcloud/cs-w1/main/static/images/2.memory/memory2.png)
+![4 bytes](https://raw.githubusercontent.com/baobaoupcloud/cs/main/static/images/2.memory/memory2.png)
