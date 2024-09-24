@@ -53,7 +53,7 @@ Hàm `strlen()` sẽ tính toán độ dài của chuỗi được truyền vào
 
 #### Chữ hoa và chữ thường
 
-Dùng hàm `toupper()` function in the `ctype.h` library to convert string into upper case. For example:
+Dùng hàm `toupper()` trong thư viện tiêu đề `ctype.h` để chuyển chuỗi sang chữ viết hoa. Ví dụ:
 
 ```bash
 #include <cs50.h>
